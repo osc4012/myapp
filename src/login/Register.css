@@ -22,6 +22,11 @@
     zoom: 2;
 }
 
+#Register > p > input[type=text]:focus {
+    background: gold;
+    font-size: 1.5em;
+}
+
 #Register > p > button {
     width: 100px;
     height: 30px;

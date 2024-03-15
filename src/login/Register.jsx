@@ -1,10 +1,14 @@
 import './Register.css';
-import {useRef, useState} from "react";
+import {useEffect, useRef, useState} from "react";
 import axios from "axios";
 import {useNavigate} from "react-router-dom";
 // import testImg from './testImg.jpg'
 
 const Register = () => {
+    useEffect(() => {
+        idRef.current.focus()
+    }, [])
+
     const navigate = useNavigate()
     // 아이디 중복체크용
     const [residCheck, setResidcheck] = useState(false)
@@ -140,7 +144,7 @@ const Register = () => {
         <>
             <div id="Register" style={{margin: '200px'}}>
                 {/*<img src={testImg}/>*/}
-                <p><span>아이디</span><input type='text' ref={idRef} onChange={(e) => {
+                <p><span>아이디</span><input placeholder='아이디' type='text' ref={idRef} onChange={(e) => {
                     setId(e.target.value)
                 }}/>
                     <button onClick={idCheck}>중복체크</button>
