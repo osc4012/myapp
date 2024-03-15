@@ -2,10 +2,33 @@
     /*background-image: url('./testImg.jpg');*/
 }
 
-span {
+#Register > p > span {
     font-family: D2Coding;
     margin: 5px;
     font-size: 2em;
+}
+
+#Register > p > input[type=text] {
+    margin: 5px;
+    width: 300px;
+    height: 30px;
+}
+
+#Register > p > input[type=radio] {
+    zoom: 2;
+}
+
+#Register > p > input[type=checkbox] {
+    zoom: 2;
+}
+
+#Register > p > button {
+    width: 100px;
+    height: 30px;
+}
+
+#Register > hr {
+    margin: 10px;
 }
 
 #pwCheck1 {
@@ -15,27 +38,3 @@ span {
 #pwCheck2 {
     color: red;
 }
-
-input[type=text] {
-    margin: 5px;
-    width: 300px;
-    height: 30px;
-}
-
-input[type=radio] {
-    zoom: 2;
-}
-
-input[type=checkbox] {
-    zoom: 2;
-}
-
-button {
-    width: 100px;
-    height: 30px;
-}
-
-hr {
-    margin: 10px;
-}
-
