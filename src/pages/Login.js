@@ -57,7 +57,6 @@ const Login = () => {
                 console.log(resp)
                 const data = resp.data
                 if (data.result === 'SUCCESS') {
-                    alert('로그인성공')
                     Session.set('loginResult', 'S')
                     Session.set('loginId', data.loginId)
                     //usrMnuAtrt 메뉴리스트
